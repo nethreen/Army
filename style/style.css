@@ -1387,3 +1387,260 @@ footer {
   margin-bottom: 1.6rem;
   display: block;
 }
+.register {
+  padding: 2.4rem;
+  background: #121923;
+}
+.register h1 {
+  color: #fff;
+  font-size: 4.3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 2.4rem;
+}
+
+.inputGroup {
+  border-radius: 1.7rem;
+  background: #252f3e;
+  padding: 2.2rem 3.8rem 2.8rem 4.2rem;
+  margin-bottom: 2.4rem;
+}
+.inputChild {
+  margin-bottom: 2.4rem;
+}
+.inputGroup label {
+  color: #fff;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: block;
+  margin-bottom: 1.2rem;
+  white-space: nowrap;
+}
+
+.inputChild input {
+  border-radius: 0.5rem;
+  background: #121923;
+  height: 6rem;
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border: none;
+  width: var(--width);
+  padding: 0 1.8rem;
+}
+.inputMiniGroup {
+  display: flex;
+  align-items: flex-end;
+  gap: 0 1.6rem;
+}
+.inputMiniGroup .inputChild {
+  width: 20%;
+}
+.inputMiniGroup .inputChild:last-child {
+  width: 60%;
+}
+.mb-0 {
+  margin-bottom: 0;
+}
+.df {
+  display: flex;
+  align-items: center;
+}
+.jcsb {
+  justify-content: space-between;
+}
+.inputWidth input {
+  width: 40%;
+}
+.labelMb label {
+  margin-bottom: 0;
+}
+
+/* radio */
+.radio-parent {
+  display: flex !important;
+  align-items: center;
+  height: 3rem;
+  position: relative;
+  padding-left: 4rem;
+  margin-bottom: 1.2rem;
+  cursor: pointer;
+  font-size: 2.2rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #fff;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-left: 3.6rem;
+}
+
+.radio-parent input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.6rem;
+  height: 2.6rem;
+  background-color: var(--tr);
+  border-radius: 50%;
+  border: 0.1rem solid #eee;
+}
+
+.radio-parent input:checked ~ .checkmark {
+  border: 0.1rem solid #eea80e;
+  background: var(--tr);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.radio-parent input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.radio-parent .checkmark:after {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  background: #eea80e;
+}
+.inputRadio {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+.inputRadio input {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.register form {
+  display: flex;
+  gap: 0 2.4rem;
+}
+.register form .formParent:first-child {
+  width: 55%;
+}
+.register form .formParent:last-child {
+  width: 45%;
+}
+.inputChildCheck {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  background: #121923;
+  height: 6rem;
+  padding: 0 1.6rem;
+  margin-bottom: 1.2rem;
+}
+.inputChildCheck span {
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.inputChildCheck .inputRadio {
+  width: fit-content;
+}
+.inputChildCheck label {
+  margin-bottom: 0 !important;
+}
+.inputLang {
+  border-radius: 0.5rem;
+  background: #252f3e;
+  height: 4.2rem;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 0 2rem;
+  width: 40%;
+  border: none;
+  color: var(--white);
+}
+.inputLang::placeholder,
+.prefix::placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+.telChild .prefix {
+  color: rgba(255, 255, 255, 0.2);
+  font-family: Gotham;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 0.5rem;
+  background: #121923;
+  height: 6rem;
+  width: 9.6rem;
+  padding: 0;
+  text-align: center;
+  margin-right: 1.2rem;
+}
+.telChild {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.inputButtons {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-direction: column;
+  margin-top: 6.4rem;
+}
+.inputButtons .blackButton {
+  font-size: 1.8rem;
+  height: 7rem;
+  padding: 0 13rem;
+  border: none;
+  background: #0b121c;
+  margin-bottom: 3.2rem;
+}
+.inputButtons .blackButton:hover {
+  background-color: #eea80e;
+}
+.forContact {
+  color: #fff;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.048rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10rem;
+}
+.forContact a {
+  color: #ffc013;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.048rem;
+  margin-left: 1rem;
+}
