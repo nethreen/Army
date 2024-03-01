@@ -36,6 +36,7 @@ input:focus::placeholder {
   margin: 0 auto;
   max-width: 140rem;
   width: 100%;
+  padding: 0 1.6rem;
 }
 
 .optionContainer {
@@ -497,6 +498,7 @@ header {
   line-height: normal;
 }
 .sloganSection h3 {
+  font-family: "Ovsyanka" !important;
   color: #fff;
   text-align: center;
   font-size: 4rem;
@@ -629,7 +631,7 @@ header {
   align-items: center;
 }
 .armyCard:hover .layer {
-  opacity: 0;
+  background-color: var(--tr);
 }
 .armyCard .layer div {
   width: 70%;
@@ -662,7 +664,7 @@ header {
   background-image: url(../media/vector1.png);
   width: 62rem;
   height: 100%;
-  background-position: cover;
+  /* background-position: cover; */
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -830,6 +832,7 @@ header {
 .blogSectionTopRight .swiper-button-prev {
   position: relative;
   width: 5.5rem;
+  min-width: 5.5rem;
   right: auto;
   left: auto;
   top: auto;
@@ -953,7 +956,7 @@ header {
   text-transform: uppercase;
 }
 .optionCard:hover .layer {
-  opacity: 0;
+  background-color: transparent;
 }
 .regionSectionLeft {
   display: flex;
@@ -1252,6 +1255,7 @@ footer {
 }
 .optionSlogan h2 {
   color: #f0f0f0;
+  font-family: "Ovsyanka" !important;
   text-align: center;
   font-size: 2.4rem;
   font-style: normal;
@@ -1427,7 +1431,7 @@ footer {
   border-radius: 0.5rem;
   background: #121923;
   height: 6rem;
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255);
   font-size: 2rem;
   font-style: normal;
   font-weight: 500;
@@ -1435,6 +1439,9 @@ footer {
   border: none;
   width: var(--width);
   padding: 0 1.8rem;
+}
+.inputChild input::placeholder {
+  color: rgba(255, 255, 255, 0.2);
 }
 .inputMiniGroup {
   display: flex;
@@ -1776,6 +1783,9 @@ footer {
   height: 100%;
   z-index: 2;
   background-image: url(../media/bottom.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .blogsTopInner {
   position: absolute;
@@ -1808,7 +1818,6 @@ footer {
 }
 .blogsTopInner p {
   color: #fff;
-  font-family: Gotham;
   font-size: 3rem;
   font-style: normal;
   font-weight: 500;
@@ -1890,4 +1899,595 @@ footer {
 }
 .blogDetail .swiper-button-next::after {
   background-image: url(../media/nextP.svg);
+}
+@media (max-width: 767.9px) {
+  .menuPopup {
+    transform: translateY(-200%);
+  }
+  header {
+    padding: 2.4rem;
+  }
+  .menuButton img {
+    width: 3.4rem;
+    height: 3.4rem;
+  }
+  .logo img {
+    width: 4rem;
+    height: 3.4rem;
+    object-fit: contain;
+  }
+  .wallpSection {
+    height: 40rem;
+  }
+  .wallpSectionInnerTitle h1 {
+    font-size: 3.3rem;
+    margin-bottom: 0;
+  }
+  .wallpSectionInnerTitle h2 {
+    font-size: 1.4rem;
+  }
+  .wallpSectionInnerTitle {
+    padding: 1rem 3rem 1.6rem 2rem;
+    top: auto;
+    bottom: 3rem;
+  }
+  .wallpSectionInner {
+    padding: 0;
+  }
+  .wallpSectionInner .yellowButton {
+    position: absolute;
+    left: 2rem;
+    font-size: 1.4rem;
+    padding: 0 2rem;
+    height: 5.312rem;
+    top: 21.4rem;
+  }
+  .sloganSection h3 {
+    font-size: 1.4rem;
+  }
+  .sloganSection {
+    padding: 3.2rem 0;
+    height: auto;
+  }
+  .carrerSection {
+    flex-direction: column;
+    height: auto;
+  }
+  .carrerSectionRight {
+    order: -1;
+    width: 100%;
+    height: 36.8rem;
+  }
+  .carrerSectionLeft {
+    width: 100%;
+  }
+  .carrerSectionLeftInner {
+    padding: 4.2rem 2rem;
+  }
+  .carrerSectionLeftInner span {
+    font-size: 1.3rem;
+    margin-bottom: 1.4rem;
+  }
+  .carrerSectionLeftInner h3 {
+    font-size: 3rem;
+    margin-bottom: 1.3rem;
+    width: 90%;
+  }
+  .carrerSectionLeftInner p {
+    font-size: 1.2rem;
+    width: 90%;
+    margin-bottom: 3.2rem;
+  }
+  .blackButton {
+    padding: 0;
+    width: 100%;
+    height: 5.7rem;
+  }
+  .carrerSection .blackButton,
+  .reasonLeft .blackButton,
+  .infoLeftInner .blackButton {
+    background-color: #eea80e !important;
+    color: #383f37;
+  }
+  .infoLeftInner .blackButton {
+    height: 5.7rem;
+  }
+  .armySection {
+    flex-direction: column;
+  }
+  .armyCard {
+    width: 100%;
+    height: 26rem;
+  }
+  .armyCard .layer div strong {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+  }
+  .armyCard .layer span {
+    font-size: 2.6rem;
+    width: 90%;
+  }
+  .armyCard .layer div img {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  .armyCard .layer {
+    justify-content: flex-end;
+  }
+  .armyCard .layer div {
+    width: 90%;
+    padding-bottom: 4rem;
+  }
+  .reasonSection {
+    padding: 3.4rem 0;
+  }
+  .vector {
+    display: none;
+  }
+  .reasonSection h4 {
+    font-size: 1.9rem;
+    margin-bottom: 2.6rem;
+  }
+  .miniContainer {
+    max-width: 90%;
+  }
+  .reasonDetail {
+    flex-direction: column;
+  }
+  .reasonLeft {
+    display: block;
+    width: 100vw;
+    margin-left: -50vw;
+    margin-right: -50vw !important;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 46.1rem;
+  }
+  .reasonLeft h6 {
+    font-size: 2rem;
+    margin-bottom: 7.8rem;
+  }
+  .reasonLeft .blackButton {
+    width: 80%;
+    padding: 0;
+  }
+  .reasonRight,
+  .nationalSection .img,
+  .blogSection .swiper {
+    width: 100vw;
+    margin-left: -50vw;
+    margin-right: -50vw !important;
+    position: relative;
+    left: 50%;
+    right: 50%;
+  }
+  .reasonCard {
+    width: 50%;
+    background: #111823 !important;
+  }
+  .reasonCard:nth-child(2),
+  .reasonCard:nth-child(3),
+  .reasonCard:nth-child(6) {
+    background: #0b121c !important;
+  }
+  .nationalSection {
+    padding: 0;
+  }
+  .nationalSection .img {
+    height: 37.5rem;
+    margin-bottom: 3.2rem;
+  }
+  .nationalInner {
+    padding: 0;
+  }
+  .nationalInner h3 {
+    font-size: 1.9rem;
+    margin-bottom: 2.8rem;
+  }
+
+  .blogSection {
+    padding: 3.2rem 0 7.2rem;
+  }
+  .blogSectionTop h6 {
+    font-size: 1.9rem;
+  }
+  .blogSectionTop {
+    margin-bottom: 2.8rem;
+  }
+
+  .blogSection .vector {
+    position: absolute;
+    right: 0;
+    top: 8.3rem;
+    background-image: url(../media/vector1.png);
+    width: 45rem;
+    display: block;
+  }
+  .blogSectionTopRight {
+    position: absolute;
+    width: 100%;
+    bottom: -4.2rem;
+  }
+  .blogSectionTopRight .blackButton,
+  .infoLeftInner .blackButton {
+    padding: 0;
+    width: 100%;
+    background-color: #111823;
+  }
+  .optionCard {
+    height: 23rem;
+    padding: 0;
+  }
+  .optionCard .layer span {
+    font-size: 1.8rem;
+  }
+  .regionSection .xl-6:last-child {
+    order: -1;
+  }
+  .mapRegion {
+    height: 34rem;
+  }
+  .regionSectionLeft h6 {
+    font-size: 2rem;
+    margin-bottom: 1.4rem;
+  }
+  .grayButton {
+    padding: 0;
+    width: 100%;
+  }
+  .mainContainer {
+    max-width: 100%;
+    width: fit-content;
+  }
+  .regionSection {
+    padding: 2.4rem 0 4.8rem;
+    background: #111823;
+  }
+  .otherLogoSection {
+    display: none;
+  }
+  footer {
+    padding: 3.2rem 0 2.4rem;
+  }
+  .footerContent,
+  .register form,
+  .infoParent {
+    flex-direction: column;
+  }
+  .footerTitle {
+    font-size: 1.9rem;
+    margin-bottom: 3.2rem;
+  }
+  .footerCard p,
+  .footerCard p:nth-child(2),
+  .menuCard span,
+  .menuCard p {
+    font-size: 1.4rem !important;
+  }
+  .footerCard p a {
+    display: contents;
+  }
+  .footerCard {
+    border-bottom: 0.1rem solid #858585;
+    padding-bottom: 3.4rem;
+    margin-bottom: 3.4rem;
+    width: 100%;
+  }
+  .socials a img {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+  .footerCard:last-child {
+    border-bottom: none;
+  }
+  .menuPopup {
+    height: 100vh;
+    padding: 6.4rem 0 3.2rem;
+    overflow: auto;
+    align-items: flex-start;
+  }
+  .menuCard {
+    margin-bottom: 5.2rem;
+  }
+  .menuPopup .closeButton img {
+    width: 2rem;
+    height: 2rem;
+  }
+  .menuPopup .closeButton {
+    left: 1.6rem;
+    top: 1.6rem;
+  }
+  .menuPopup .sm-12 {
+    grid-column: span 6;
+  }
+  .menuCard span {
+    margin-bottom: 1.6rem;
+    text-align: left;
+  }
+  .register h1 {
+    font-size: 2.6rem;
+    margin-bottom: 3.6rem;
+  }
+  .register {
+    padding: 3.2rem 0 6.4rem;
+  }
+  .register form .formParent {
+    width: 100% !important;
+  }
+  .inputWidth input {
+    width: var(--width);
+  }
+  .inputGroup {
+    padding: 2rem 1.6rem;
+  }
+  .inputMiniGroup .inputChild:last-child {
+    width: 50%;
+  }
+  .inputWidth {
+    flex-wrap: wrap;
+  }
+  .labelMb label {
+    margin-bottom: 1.2rem;
+    white-space: nowrap;
+  }
+  .inputRadio {
+    width: auto;
+    gap: 0 2rem;
+  }
+  .radio-parent {
+    margin: 0 !important;
+  }
+  .inputChildCheck {
+    height: 12rem;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .inputChildCheck span {
+    margin-bottom: 2rem;
+  }
+  .inputChildCheck .inputRadio {
+    width: 100%;
+    gap: 2rem;
+  }
+  .inputLang {
+    width: 70%;
+    margin-bottom: 2rem;
+  }
+  .telChild .prefix {
+    width: 6.4rem;
+  }
+  .telChild input {
+    width: 80%;
+  }
+  .inputButtons {
+    margin-top: 3.2rem;
+  }
+  .blogsTop,
+  .optionWallp,
+  .infoRight,
+  .historyStep img {
+    height: 43rem;
+  }
+  .blogsTopInner h1,
+  .blogContent h1 {
+    font-size: 1.4rem;
+  }
+  .blogsTopInner {
+    width: var(--width);
+    bottom: 1rem;
+  }
+  .blogsTopInner span,
+  .blogContent span.date {
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .blogsTopInner p {
+    font-size: 1.4rem;
+  }
+  .blogCard .img {
+    height: 17rem;
+    margin-bottom: 1rem;
+  }
+  .blogCard p {
+    height: 4.8rem;
+  }
+  .blogCard strong {
+    font-size: 1.2rem;
+  }
+  .blogParents .grayButton {
+    margin: 1.2rem auto 0;
+    width: 90%;
+    padding: 0;
+  }
+  .blogContent h1,
+  .blogContent p,
+  .blogContent ul li,
+  .blogContent ol li,
+  .infoLeft {
+    width: 100%;
+  }
+  .blogContent h1 {
+    margin-bottom: 2.4rem;
+  }
+  .blogContent h1,
+  .blogContent p,
+  .blogContent ul li,
+  .blogContent ol li {
+    font-size: 1.4rem;
+  }
+  .blogContent p {
+    opacity: 0.7;
+  }
+  .blogDetail {
+    margin: 2rem 0;
+    padding: 0 !important;
+  }
+  .blogDetailSlide {
+    height: 38.7rem;
+  }
+  .blogDetail .swiper-button-prev::after,
+  .blogDetail .swiper-button-next::after {
+    width: 3.2rem;
+    height: 3.2rem;
+    min-width: 3.2rem;
+  }
+  .blogDetail .swiper-button-next,
+  .blogDetail .swiper-button-prev {
+    right: 0.2rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    min-width: 3.2rem;
+  }
+  .blogDetail .swiper-button-prev {
+    left: 0.2rem;
+  }
+  .optionWallp {
+    position: relative;
+  }
+  .optionWallp h1 {
+    font-size: 2.2rem;
+    position: absolute;
+    left: 1.6rem;
+    bottom: 5.6rem;
+    z-index: 3;
+  }
+  .optionWallp::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -0.1rem;
+    width: 100%;
+    height: 100%;
+    background-image: url(../media/bottom.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+  }
+  .optionSlogan {
+    padding: 4rem 1.6rem;
+  }
+  .infoRight {
+    order: -1;
+    width: 100%;
+  }
+  .infoParent {
+    height: auto;
+  }
+  .infoLeft {
+    padding: 2.8rem 0;
+    background-color: #111823;
+  }
+  .infoLeftCards {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 1.6rem;
+  }
+  .infoCard {
+    margin-bottom: 3.6rem;
+    width: 12.8rem;
+    padding: 0.7rem 0.5rem;
+  }
+  .infoCardTop {
+    width: 11.8rem;
+    height: 11.8rem;
+  }
+  .infoCard span {
+    width: 70%;
+  }
+  .infoLeftInner p {
+    font-size: 2.2rem;
+  }
+  .optionCardRight,
+  .optionDetailCard:nth-child(even) .optionCardRight {
+    padding: 0;
+  }
+  .optionDetailCard .img {
+    margin-bottom: 2.6rem;
+  }
+  .optionCardRight p {
+    width: 100%;
+    font-size: 1.6rem;
+    margin-bottom: 2.4rem;
+  }
+  .optionCardRight span {
+    font-size: 1.6rem;
+  }
+  .optionDetailCard {
+    margin-bottom: 5.6rem;
+  }
+  .optionDetailCard:last-child {
+    margin-bottom: 0;
+  }
+  .historyContent span {
+    font-size: 12.5rem;
+  }
+  .historyContent p {
+    font-size: 1.4rem;
+    text-align: center;
+    width: 90%;
+  }
+  .historyContentInner {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70%;
+  }
+  .historyStep .layer {
+    height: 52rem;
+  }
+  .historyStep {
+    height: 60vh;
+    margin-bottom: 25rem;
+  }
+  .historyParent .line {
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 25%;
+    height: 10%;
+  }
+  .historyParent .line2 {
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 65%;
+    height: 10%;
+  }
+  .stepTwo .historyContentInner,
+  .historyContentLeft .historyContentInner {
+    padding: 0;
+    justify-content: flex-end;
+  }
+  .stepTwo .historyContent {
+    display: flex;
+  }
+  .stepTwo {
+    height: 70vh;
+  }
+  .stepTwo .layer2,
+  .historyStep:last-child .layer2 {
+    height: 100%;
+  }
+  .historyStep:last-child .historyContentLeft .historyContentInner {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+
+    margin: auto;
+  }
+  .historyStep:last-child .historyContentLeft .historyContentInner p {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .historyParent {
+    padding-bottom: 6.4rem;
+  }
 }
