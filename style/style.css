@@ -372,13 +372,13 @@ header {
 }
 
 .menuPopup {
-  position: absolute;
-  background: #111823;
+  position: fixed;
+  background: #121923;
   top: 0;
   left: 0;
   height: 60vh;
   width: 100%;
-  z-index: 2;
+  z-index: 6;
   display: flex;
   align-items: center;
   transform: translateY(-110%);
@@ -638,6 +638,27 @@ header {
 }
 .armyCard .layer div {
   width: 70%;
+}
+.greenHover:hover .layer {
+  background: linear-gradient(
+    180deg,
+    rgba(14, 238, 23, 0) 66.2%,
+    rgba(52, 255, 19, 0.62) 100%
+  );
+}
+.redHover:hover .layer {
+  background: linear-gradient(
+    180deg,
+    rgba(238, 14, 14, 0) 66.2%,
+    rgba(255, 19, 19, 0.62) 100%
+  );
+}
+.blueHover:hover .layer {
+  background: linear-gradient(
+    180deg,
+    rgba(14, 63, 238, 0) 66.2%,
+    rgba(19, 85, 255, 0.62) 100%
+  );
 }
 .reasonSection {
   position: relative;
@@ -983,6 +1004,31 @@ header {
   text-transform: uppercase;
   margin-bottom: 3rem;
 }
+.regionSection:hover .regionSectionLeft h6 {
+  color: #383f37;
+}
+.regionSection {
+  position: relative;
+}
+.regionSection::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 1%;
+  height: 100%;
+  transition: 0.4s all ease;
+  background: linear-gradient(0deg, #ffc013 0%, #ffc013 100%),
+    url(<path-to-image>) lightgray -212px -388px / 119.168% 270.082% no-repeat;
+}
+.regionSection:hover::after {
+  width: 55%;
+}
+.regionSectionLeft {
+  position: absolute;
+  z-index: 3;
+  width: 40%;
+}
 .grayButton {
   color: #fff;
   text-align: center;
@@ -1042,9 +1088,16 @@ header {
   align-items: center;
   justify-content: center;
 }
+.logoCard:hover img {
+  transform: scale(1.1);
+}
+.logoCard:hover p {
+  transform: scale(0.9);
+}
 footer {
   padding: 7.8rem 0 18rem;
   background: #0b121c;
+  border-top: 0.4rem solid #eea80e;
 }
 .footerContent {
   display: flex;
@@ -1431,11 +1484,29 @@ footer {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  display: block;
+  display: flex;
+  align-items: center;
   margin-bottom: 1.2rem;
   white-space: nowrap;
 }
 
+.inputGroup label span {
+  color: #eea80e;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: block;
+  margin-left: 0.2rem;
+}
+
+.radio-parent.disabled {
+  color: #8a8a8a;
+  pointer-events: none;
+}
+.radio-parent.disabled .checkmark {
+  opacity: 0.6;
+}
 .inputChild input {
   border-radius: 0.5rem;
   background: #121923;
@@ -1575,7 +1646,7 @@ footer {
   margin-bottom: 1.2rem;
 }
 .inputChildCheck span {
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.9);
   font-size: 2rem;
   font-style: normal;
   font-weight: 500;
@@ -1583,6 +1654,22 @@ footer {
 }
 .inputChildCheck .inputRadio {
   width: fit-content;
+}
+.inputGroup strong {
+  color: #eea80e;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: block;
+  margin-top: 2rem;
+}
+.inputAgree label {
+  color: #fff;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 .inputChildCheck label {
   margin-bottom: 0 !important;
@@ -1604,6 +1691,9 @@ footer {
 .prefix::placeholder {
   color: rgba(255, 255, 255, 0.2);
 }
+.telChild input {
+  width: 50%;
+}
 .telChild .prefix {
   color: rgba(255, 255, 255, 0.2);
   font-family: Gotham;
@@ -1624,6 +1714,7 @@ footer {
   align-items: center;
   justify-content: flex-end;
 }
+
 .inputButtons {
   display: flex;
   align-items: flex-end;
@@ -1923,7 +2014,9 @@ footer {
   line-height: normal;
   text-transform: uppercase;
 }
-
+.headerRight ul li a:hover {
+  color: #eea80e;
+}
 ::-webkit-scrollbar {
   width: 0.6rem;
 }
@@ -1944,28 +2037,202 @@ footer {
 ::-webkit-scrollbar-thumb:hover {
   background: #041e49;
 }
+.externalSiteSection {
+  background: #0b121c;
+  padding: 13rem 0;
+}
+.externalCard {
+  background: #111823;
+  width: 28%;
+  padding: 4.4rem 0 2.8rem;
+  position: relative;
+}
+.externalCard p {
+  color: #fff;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-left: 3.4rem;
+  margin-bottom: 3.8rem;
+  width: 70%;
+  height: 5.6rem;
+}
+.externalCard span {
+  padding-left: 3.4rem;
+  color: #898989;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.externalCard img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 5.4rem;
+  height: 5.4rem;
+}
+.externalCard:hover {
+  background: #eea80e;
+}
+.externalCard:hover span,
+.externalCard:hover p {
+  color: #111823;
+}
+.externalSite {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header.active {
+  position: fixed;
+  top: 0;
+  transition: all 0.3s ease;
+  width: var(--width);
+  padding: 1.2rem 4.2rem;
+  z-index: 4;
+}
+header.active .logo img {
+  width: 4.2rem;
+  height: 4.2rem;
+}
+header.active ul li a {
+  font-size: 1.2rem;
+}
+header.active ul {
+  gap: 2rem;
+}
+.checkbox-parent {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: flex;
+  align-items: center;
+}
+.checkbox-parent p {
+  margin: 0;
+  margin-top: 4px;
+}
+.checkbox-parent input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkbox-parent .checkmark {
+  position: absolute;
+  top: -1rem;
+  left: 0;
+  height: 3rem;
+  width: 3rem;
+  background-color: #111823;
+  border-radius: 0.5rem;
+  border: none;
+}
 
+.checkbox-parent input:checked ~ .checkmark {
+  background: #121923;
+}
+.checkbox-parent .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.checkbox-parent input:checked ~ .checkmark:after {
+  display: block;
+}
+.checkbox-parent .checkmark:after {
+  left: 0;
+  top: 0;
+  bottom: 3px;
+  right: 0;
+  margin: auto;
+  width: 0.25rem;
+  height: 1rem;
+  border: solid #eea80e;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.menuButton {
+  display: none;
+}
+.dropdownHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  background: #252f3e;
+  height: 4.2rem;
+  width: 16rem;
+  padding: 0 0.8rem;
+  cursor: pointer;
+}
+.dropdownHead span {
+  color: #fff;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.dropdownHead svg {
+  width: 1rem;
+  height: 1rem;
+}
+.dropdown {
+  position: relative;
+}
+.dropdownBody {
+  position: absolute;
+  top: 93%;
+  left: 0;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  background: #252f3e;
+  z-index: 2;
+  width: var(--width);
+  padding: 1.6rem;
+  display: none;
+  z-index: 1;
+}
+.dropdownBody .radio-parent {
+  margin: 0 0 1.8rem !important;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.dropdownBody.active {
+  display: block;
+}
 @media (max-width: 767.9px) {
   .menuPopup {
     transform: translateY(-200%);
   }
   header {
-    padding: 2.4rem;
+    padding: 1.6rem;
   }
   .menuButton img {
     width: 3.4rem;
     height: 3.4rem;
   }
-  .logo img {
-    width: 4rem;
-    height: 3.4rem;
-    object-fit: contain;
-  }
+
   .wallpSection {
     height: 40rem;
   }
   .wallpSectionInnerTitle h1 {
-    font-size: 3.3rem;
+    font-size: 2rem;
     margin-bottom: 0;
   }
   .wallpSectionInnerTitle h2 {
@@ -1974,7 +2241,7 @@ footer {
   .wallpSectionInnerTitle {
     padding: 1rem 3rem 1.6rem 2rem;
     top: auto;
-    bottom: 3rem;
+    bottom: 5rem;
   }
   .wallpSectionInner {
     padding: 0;
@@ -2016,7 +2283,7 @@ footer {
   .carrerSectionLeftInner h3 {
     font-size: 3rem;
     margin-bottom: 1.3rem;
-    width: 90%;
+    width: 100%;
   }
   .carrerSectionLeftInner p {
     font-size: 1.2rem;
@@ -2064,9 +2331,10 @@ footer {
     padding-bottom: 4rem;
   }
   .reasonSection {
-    padding: 3.4rem 0;
+    padding: 3.4rem 0 0;
   }
-  .vector {
+  .vector,
+  .regionSection::after {
     display: none;
   }
   .reasonSection h4 {
@@ -2198,6 +2466,7 @@ footer {
   }
   footer {
     padding: 3.2rem 0 2.4rem;
+    border-top: none;
   }
   .footerContent,
   .register form,
@@ -2244,8 +2513,10 @@ footer {
     height: 2rem;
   }
   .menuPopup .closeButton {
-    left: 1.6rem;
+    right: 1.6rem;
+    left: auto;
     top: 1.6rem;
+    width: fit-content;
   }
   .menuPopup .sm-12 {
     grid-column: span 6;
@@ -2535,5 +2806,131 @@ footer {
   .historyParent {
     padding-bottom: 6.4rem;
     overflow: hidden;
+  }
+  .inputAgree label {
+    white-space: normal;
+  }
+  .inputGroup label,
+  .inputChildCheck span,
+  .inputChild input {
+    font-size: 1.4rem;
+  }
+  .telParent,
+  .externalSite {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .telParent label {
+    white-space: nowrap;
+  }
+  .telParent label br,
+  .headerRight {
+    display: none;
+  }
+  .menuButton {
+    display: flex;
+  }
+  .menuInner ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+  }
+  .menuInner {
+    padding: 3.2rem 1.6rem;
+    width: var(--width);
+  }
+  .menuInner ul li a {
+    color: #f0f0f0;
+    font-size: 2.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  .menuInner ul li {
+    margin-bottom: 3.2rem;
+  }
+  header.active {
+    padding: 1.6rem;
+  }
+  .logo img,
+  header.active .logo img {
+    width: 4rem;
+    height: 3.4rem;
+    object-fit: contain;
+  }
+  .menuRight {
+    background: #0b121c;
+    margin: 0 -1.6rem;
+    padding: 0 1.6rem 9.6rem;
+  }
+
+  .menuRight,
+  .titleCard {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .titleCard {
+    padding: 2.4rem 0;
+    border-bottom: 0.1rem solid #858585;
+    width: 100%;
+  }
+  .titleCard span {
+    color: #fff;
+    font-size: 1.9rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: right;
+    margin-bottom: 3.2rem;
+  }
+  .titleCard p {
+    color: #fff;
+    text-align: right;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    width: 70%;
+  }
+  .armyCard .layer strong {
+    font-size: 2.6rem;
+    border-bottom: 0.2rem solid #eea80e;
+  }
+  .reasonLeft {
+    border-top: 0.2rem solid #eea80e;
+  }
+  .regionSectionLeft {
+    position: static;
+    width: 100%;
+  }
+  .regionSection:hover .regionSectionLeft h6 {
+    color: #fff;
+  }
+  .externalSiteSection {
+    padding: 2.2rem 0;
+  }
+  .externalCard {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .externalCard p {
+    font-size: 1.8232rem;
+    width: 80%;
+  }
+  .externalCard img {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+  .regionSectionLeft .grayButton {
+    background-color: #eea80e;
+  }
+  .dropdownHead span {
+    margin-bottom: 0 !important;
   }
 }

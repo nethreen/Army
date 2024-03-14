@@ -9,6 +9,56 @@
   </head>
 
   <body>
+    <div class="menuPopup" bis_skin_checked="1">
+      <div class="closeButton" bis_skin_checked="1">
+        <img src="../media/x.svg" alt="close" />
+      </div>
+      <div class="menuInner">
+        <ul>
+          <li>
+            <a href="../pages/info.html"> Ümumİ məlumatlar </a>
+          </li>
+          <li>
+            <a href="../pages/optionDetail.html"> ÜSTÜNLÜKLƏR </a>
+          </li>
+          <li>
+            <a href="../pages/optionDetail.html">İMtİYAZLAR </a>
+          </li>
+          <li>
+            <a href="#sections"> İXTİSASLAR </a>
+          </li>
+          <li>
+            <a href="../pages/optionDetail.html"> QƏBUL QAYDALARI </a>
+          </li>
+        </ul>
+        <div class="menuRight">
+          <div class="titleCard">
+            <span> Mİllİ MÜDAFİƏ UnİversİteTİ </span>
+            <p>AZ1065, Bakı şəhərİ, akademİk Şəfayət Mehdİyev küçəsİ 136</p>
+          </div>
+          <div class="titleCard">
+            <span> MN SOSİAL MEDİADA </span>
+            <div class="socials">
+              <a href="https://twitter.com/" target="_blank">
+                <img src="../media/tw.svg" alt="twitter" />
+              </a>
+              <a href="https://www.linkedin.com/" target="_blank">
+                <img src="../media/in.svg" alt="linkedin" />
+              </a>
+              <a href="https://www.facebook.com/" target="_blank">
+                <img src="../media/fac.svg" alt="facebook" />
+              </a>
+              <a href="https://www.youtube.com/" target="_blank">
+                <img src="../media/youtube.svg" alt="youtube" />
+              </a>
+              <a href="https://www.instagram.com/" target="_blank">
+                <img src="../media/insta.svg" alt="instagram" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="popup successPopup">
       <div class="layer"></div>
       <div class="popContainer">
@@ -18,72 +68,55 @@
         <button class="closeButton">BAĞLA</button>
       </div>
     </div>
-    <div class="menuPopup">
-      <div class="closeButton">
-        <img src="../media/x.svg" alt="close" />
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="xl-3 lg-3 md-3 sm-12">
-            <a href="" class="menuCard">
-              <span> ORDUNU KƏŞF EDİN </span>
-              <div class="img">
-                <img src="../media/menu.jpg" alt="img" />
-              </div>
-              <p>QATILMA ADIMLARI</p>
-            </a>
-          </div>
-          <div class="xl-3 lg-3 md-3 sm-12">
-            <a href="" class="menuCard">
-              <span>ORDUDA YAŞAM </span>
-              <div class="img">
-                <img src="../media/menu2.jpg" alt="img" />
-              </div>
-              <p>UYĞUNLUQ ŞƏRTLƏRİ Fiziki Uyğunluq Şərtləri</p>
-            </a>
-          </div>
-          <div class="xl-3 lg-3 md-3 sm-12">
-            <a href="" class="menuCard">
-              <span>FAYDALAR</span>
-              <div class="img">
-                <img src="../media/menu3.jpg" alt="img" />
-              </div>
-              <p>QATILDIQDAN SONRA</p>
-            </a>
-          </div>
-          <div class="xl-3 lg-3 md-3 sm-12">
-            <a href="" class="menuCard">
-              <span> NECƏ QATILMAQ OLAR </span>
-              <div class="img">
-                <img src="../media/menu4.jpg" alt="img" />
-              </div>
-              <p>ƏSGƏR HAZIRLIQ İMTAHANI</p>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
+
     <header>
-      <button class="menuButton">
-        <img src="../media/menu.svg " alt="menu" />
-      </button>
       <a href="" class="logo">
         <img src="../media/logo.svg" alt="logo" />
       </a>
+      <div class="headerRight">
+        <ul>
+          <li>
+            <a href="../pages/info.html"> Ümumİ məlumatlar </a>
+          </li>
+          <li>
+            <a href="../pages/optionDetail.html"> ÜSTÜNLÜKLƏR </a>
+          </li>
+          <li>
+            <a href="../pages/optionDetail.html">İMtİYAZLAR </a>
+          </li>
+          <li>
+            <a href="#sections"> İXTİSASLAR </a>
+          </li>
+          <li>
+            <a href="../pages/optionDetail.html"> QƏBUL QAYDALARI </a>
+          </li>
+        </ul>
+      </div>
+      <button class="menuButton">
+        <img src="../media/menu.svg " alt="menu" />
+      </button>
     </header>
     <div class="register">
       <div class="container">
-        <h1>Zəruri olan məlumatlar</h1>
+        <h1>Hərbi Kolleclərə ilkin qeydiyyat forması</h1>
         <form action="">
           <div class="formParent">
             <div class="inputGroup">
               <div class="inputChild">
-                <label for="">Soyad, Ad və Ata adı</label>
-                <input type="text" placeholder="Oruclu Babək Bəyalı" />
+                <label for="">Soyad <span>*</span></label>
+                <input type="text" placeholder="Oruclu" />
+              </div>
+              <div class="inputChild">
+                <label for="">Ad <span>*</span></label>
+                <input type="text" placeholder="Babək" />
+              </div>
+              <div class="inputChild">
+                <label for="">Ata adı <span>*</span></label>
+                <input type="text" placeholder="Bəyalı" />
               </div>
               <div class="inputMiniGroup">
                 <div class="inputChild">
-                  <label for="">Doğum Tarixi</label>
+                  <label for="">Doğum Tarixi <span>*</span></label>
                   <input type="number" placeholder="Gün" />
                 </div>
                 <div class="inputChild">
@@ -96,7 +129,9 @@
             </div>
             <div class="inputGroup">
               <div class="inputChild mb-0 df inputWidth jcsb labelMb">
-                <label for="">Fərdi identifikasiya nömrəsi (FİN)</label>
+                <label for=""
+                  >Fərdi identifikasiya nömrəsi (FİN) <span>*</span></label
+                >
                 <input type="text" placeholder="xxxxxxx" />
               </div>
             </div>
@@ -109,9 +144,9 @@
                     <input type="radio" checked="checked" name="radio" />
                     <span class="checkmark"></span>
                   </label>
-                  <label class="radio-parent"
+                  <label class="radio-parent disabled"
                     >Qadın
-                    <input type="radio" name="radio" />
+                    <input type="radio" name="radio" disabled />
                     <span class="checkmark"></span>
                   </label>
                 </div>
@@ -119,14 +154,8 @@
             </div>
             <div class="inputGroup">
               <div class="inputChild mb-0">
-                <label for="">Bitirdiyiniz Orta Təhsil Müəsisəsi</label>
-                <input type="text" placeholder="Avropa Azərbaycan Məktəbi" />
-              </div>
-            </div>
-            <div class="inputGroup">
-              <div class="inputChild mb-0">
-                <label for="">Məhkumluq barədə məlumat</label>
-                <input type="text" placeholder="..." />
+                <label for=""> Faktiki yaşadığı ünvan</label>
+                <input type="text" placeholder="Sakit Əliyev küç. 23" />
               </div>
             </div>
             <div class="inputGroup">
@@ -153,7 +182,7 @@
                     <span class="checkmark"></span>
                   </label>
                   <label class="radio-parent"
-                    >Pis
+                    >Kafi
                     <input type="radio" name="a" />
                     <span class="checkmark"></span>
                   </label>
@@ -173,7 +202,7 @@
                     <span class="checkmark"></span>
                   </label>
                   <label class="radio-parent"
-                    >Pis
+                    >Kafi
                     <input type="radio" name="b" />
                     <span class="checkmark"></span>
                   </label>
@@ -193,7 +222,7 @@
                     <span class="checkmark"></span>
                   </label>
                   <label class="radio-parent"
-                    >Pis
+                    >Kafi
                     <input type="radio" name="c" />
                     <span class="checkmark"></span>
                   </label>
@@ -205,11 +234,60 @@
               <div class="inputChildCheck">
                 <span> Sürücülük vəsiqəsi </span>
                 <div class="inputRadio">
-                  <label class="radio-parent"
-                    >var
-                    <input type="radio" checked="checked" name="as" />
-                    <span class="checkmark"></span>
-                  </label>
+                  <div class="dropdown">
+                    <div class="dropdownHead">
+                      <span> Var </span>
+                      <svg
+                        width="10"
+                        height="8"
+                        viewBox="0 0 10 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M5 8L0.669873 0.499999L9.33013 0.5L5 8Z"
+                          fill="#121923"
+                        />
+                      </svg>
+                    </div>
+                    <div class="dropdownBody">
+                      <label class="radio-parent"
+                        >A
+                        <input type="checkbox" name="license" />
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="radio-parent"
+                        >b
+                        <input type="checkbox" name="license" />
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="radio-parent"
+                        >c
+                        <input type="checkbox" name="license" />
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="radio-parent"
+                        >D
+                        <input type="checkbox" name="license" />
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="radio-parent"
+                        >ce
+                        <input type="checkbox" name="license" />
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="radio-parent"
+                        >be
+                        <input type="checkbox" name="license" />
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="radio-parent"
+                        >de
+                        <input type="checkbox" name="license" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                  </div>
                   <label class="radio-parent"
                     >Yox
                     <input type="radio" name="as" />
@@ -226,7 +304,7 @@
                     <span class="checkmark"></span>
                   </label>
                   <label class="radio-parent"
-                    >Yox
+                    >Yoxdur
                     <input type="radio" name="ab" />
                     <span class="checkmark"></span>
                   </label>
@@ -241,7 +319,7 @@
                     <span class="checkmark"></span>
                   </label>
                   <label class="radio-parent"
-                    >Yox
+                    >Xeyr
                     <input type="radio" name="ac" />
                     <span class="checkmark"></span>
                   </label>
@@ -256,7 +334,7 @@
                     <span class="checkmark"></span>
                   </label>
                   <label class="radio-parent"
-                    >Yox
+                    >Xeyr
                     <input type="radio" name="ad" />
                     <span class="checkmark"></span>
                   </label>
@@ -264,7 +342,25 @@
               </div>
             </div>
             <div class="inputGroup">
-              <div class="inputChild mb-0 df jcsb labelMb">
+              <div class="inputChild mb-0 df inputWidth jcsb labelMb">
+                <label for="">Məhkumluq barədə məlumat</label>
+                <div class="inputRadio">
+                  <label class="radio-parent"
+                    >Var
+                    <input type="radio" checked="checked" name="a" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="radio-parent"
+                    >Yox
+                    <input type="radio" name="a" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="inputGroup">
+              <div class="inputChild mb-0 df jcsb labelMb telParent">
                 <label for=""
                   >Əlaqə <br />
                   Telefon nömrəsi</label
@@ -274,12 +370,28 @@
                   <input type="number" placeholder="xxxxxxx" />
                 </div>
               </div>
+              <strong>
+                *18 yaşı tamam olmamış şəxslərin himayədarlarının əlaqə
+                nömrələrini qeyd etməlidir.
+              </strong>
+            </div>
+            <div class="inputGroup">
+              <div class="inputChild mb-0 df jcsb labelMb inputAgree">
+                <label for=""
+                  >Qəbul qaydaları ilə tanış oldum və məlumatların doğruluğunu
+                  təsdiq edirəm.</label
+                >
+                <label class="checkbox-parent">
+                  <input type="checkbox" checked="checked" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
             </div>
             <div class="inputButtons">
-                <button type="button" class="blackButton">Müraciət</button>
-                <div class="forContact">
-                  Əlaqə: <a href="tel:+ *0811"> *0811</a>
-                </div>
+              <button type="button" class="blackButton">Müraciət</button>
+              <div class="forContact">
+                Əlaqə: <a href="tel:+ *0811"> *0811</a>
+              </div>
             </div>
           </div>
         </form>
